@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #F7EAFB;
+    --background-color: #0A010D;
+    --role-color: #978F99;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: 'General Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 2rem;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 64px;
+}
+
+.nav-name a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-name a:hover {
+    opacity: 0.8;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a.active {
+    opacity: 1;
+    font-weight: 500;
+}
+
+.main-content {
+    margin-left: 300px;
+    flex: 1;
+    overflow-y: auto;
+    padding: 64px 2rem 2rem 2rem;
+}
+
+/* Project Grid Styles */
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-image {
+    flex: 1;
+    border-radius: 8px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.role {
+    margin: 1rem 0;
+    color: var(--role-color);
+}
+
+.learn-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.footer-content {
+    margin-top: auto;
+}
+
+.doodle {
+    width: 215.26px;
+    height: 225.41px;
+    margin-bottom: 1rem;
+}
+
+/* Project Details Page Styles */
+.project-details {
+    max-width: 1200px;
+    padding-bottom: 4rem;
+}
+
+.project-header {
+    margin-bottom: 3rem;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info-section {
+    max-width: 800px;
+}
+
+.info-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.role-text {
+    color: var(--role-color);
+}
+
+.project-image-full {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.project-image-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Page Styles */
+.about-content {
+    max-width: 800px;
+    padding-bottom: 4rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--primary-color);
+    opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-header h1 {
+        font-size: 2rem;
+    }
+
+    .project-info {
+        gap: 2rem;
+    }
+
+    .project-image-full {
+        height: 300px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+} 
