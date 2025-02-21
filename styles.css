@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 64px;
+    left: 146px;
 }
 
 .nav-name a {
@@ -64,7 +65,7 @@ body {
 }
 
 .main-content {
-    margin-left: 300px;
+    margin-left: calc(300px + 146px + 75px);
     flex: 1;
     overflow-y: auto;
     padding: 64px 2rem 2rem 2rem;
